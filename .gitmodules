@@ -1,0 +1,3 @@
+[submodule "app/src/main/assets/motivator"]
+	path = app/src/main/assets/motivator
+	url = git@github.com:dave-kennedy/motivator
