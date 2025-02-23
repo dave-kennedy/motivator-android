@@ -4,7 +4,6 @@ import android.content.Intent
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import android.webkit.WebView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.webkit.WebViewAssetLoader
 import androidx.webkit.WebViewClientCompat
 
@@ -19,7 +18,7 @@ class LocalContentWebViewClient(private val assetLoader: WebViewAssetLoader) : W
         }
 
         val intent = Intent(Intent.ACTION_VIEW, request.url)
-        startActivity(view.context, intent, null)
+        view.context.startActivity(intent)
         return true
     }
 }
