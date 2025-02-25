@@ -44,7 +44,14 @@
         android:pathData="m126,24h18s0,102 -48,102c31.88,0 30,-102 30,-102z"
         android:fillColor="#fe9"/>
     <path
-        android:pathData="m112,88 l-15.99,-8.4 -15.98,8.41 3.05,-17.81 -12.94,-12.6 17.88,-2.61 7.99,-16.2 8,16.19 17.88,2.59 -12.93,12.61z"
-        android:fillColor="#fff"/>
+        android:pathData="m69,69 l24,24 42,-42"
+        android:strokeWidth="8"
+        android:fillColor="#00000000"
+        android:strokeColor="#fc0"/>
+    <path
+        android:pathData="m66,66 l24,24 42,-42"
+        android:strokeWidth="8"
+        android:fillColor="#00000000"
+        android:strokeColor="#fff"/>
   </group>
 </vector>
