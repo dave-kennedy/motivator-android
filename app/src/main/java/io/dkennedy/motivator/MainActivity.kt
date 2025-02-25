@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.webView.settings.domStorageEnabled = true
         binding.webView.settings.javaScriptEnabled = true
+        binding.webView.settings.userAgentString = "io.dkennedy.motivator"
 
         val assetLoader = WebViewAssetLoader.Builder()
             .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this))
