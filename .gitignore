@@ -7,9 +7,13 @@
 /.idea/assetWizardSettings.xml
 /.idea/caches
 /.idea/deploymentTargetSelector.xml
+/.idea/deviceManager.xml
 /.idea/libraries
+/.idea/markdown.xml
 /.idea/modules.xml
 /.idea/navEditor.xml
+/.idea/studiobot.xml
+/.idea/vcs.xml
 /.idea/workspace.xml
 /app/debug
 /app/release
