@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "io.dkennedy.motivator"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "io.dkennedy.motivator"
         minSdk = 25
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 6
         versionName = "1.0"
 
