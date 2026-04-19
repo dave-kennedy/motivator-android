@@ -2,7 +2,7 @@ package io.dkennedy.motivator
 
 import android.net.Uri
 import android.os.Bundle
-import android.view.KeyEvent
+import androidx.activity.addCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -71,15 +71,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.webView.loadUrl("https://appassets.androidplatform.net/assets/motivator/index.html")
-    }
 
-    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
-        if (keyCode == KeyEvent.KEYCODE_BACK && binding.webView.canGoBack()) {
-            binding.webView.goBack()
-            return true
+        onBackPressedDispatcher.addCallback(this) {
+            if (binding.webView.canGoBack()) {
+                binding.webView.goBack()
+            } else {
+                finish()
+            }
         }
-
-        return super.onKeyDown(keyCode, event)
     }
 
     private fun writeFile(uri: Uri) {
