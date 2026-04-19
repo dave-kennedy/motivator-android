@@ -10,7 +10,7 @@ android {
         applicationId = "io.dkennedy.motivator"
         minSdk = 25
         targetSdk = 36
-        versionCode = 6
+        versionCode = 8
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
