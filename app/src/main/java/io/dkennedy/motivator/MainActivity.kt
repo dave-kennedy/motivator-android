@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
     private val webChromeClient = FileChooserWebChromeClient(importFileChooser)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
